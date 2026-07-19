@@ -1,34 +1,44 @@
-/* 
-JD CREATIONS NETWORK
-Premium Agency Style System
-*/
+/* =====================================
+   JD CREATIONS NETWORK
+   Luxury Digital Studio Experience
+===================================== */
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
+
 
 
 html {
-    scroll-behavior: smooth;
+
+scroll-behavior:smooth;
+
 }
+
 
 
 body {
 
-    font-family: "Inter", sans-serif;
+background:var(--black);
 
-    background: #ffffff;
+color:var(--ivory);
 
-    color: #334155;
+font-family:var(--sans);
 
-    line-height: 1.7;
+font-weight:300;
 
-    -webkit-font-smoothing: antialiased;
+line-height:1.8;
 
 }
+
+
 
 
 
@@ -36,160 +46,23 @@ h1,
 h2,
 h3 {
 
-    font-family: "Poppins", sans-serif;
+font-family:var(--serif);
 
-    color: #0f172a;
+font-weight:600;
 
-    letter-spacing: -0.03em;
-
-}
-
-
-
-h1 {
-
-    font-size: clamp(2.8rem, 6vw, 5rem);
-
-    line-height: 1.05;
-
-    font-weight: 800;
+letter-spacing:-.03em;
 
 }
 
 
-
-h2 {
-
-    font-size: clamp(2rem, 4vw, 3rem);
-
-    line-height: 1.15;
-
-    font-weight: 700;
-
-}
-
-
-
-h3 {
-
-    font-size: 1.35rem;
-
-    font-weight: 700;
-
-}
-
-
-
-p {
-
-    color: #64748b;
-
-    font-size: 1.05rem;
-
-}
 
 
 
 .container {
 
-    width: min(1180px, 90%);
+width:min(1200px,88%);
 
-    margin: auto;
-
-}
-
-
-
-
-
-/* =========================
-   HEADER
-========================= */
-
-
-.header {
-
-    position: sticky;
-
-    top:0;
-
-    z-index:100;
-
-    background:rgba(255,255,255,.9);
-
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid #f1f5f9;
-
-}
-
-
-
-.nav-container {
-
-    height:88px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-}
-
-
-
-.logo {
-
-    text-decoration:none;
-
-    color:#0f172a;
-
-    font-size:1.5rem;
-
-    font-weight:800;
-
-}
-
-
-
-.logo span {
-
-    color:#2563eb;
-
-}
-
-
-
-.nav {
-
-    display:flex;
-
-    gap:38px;
-
-}
-
-
-
-.nav a {
-
-    text-decoration:none;
-
-    color:#475569;
-
-    font-size:.95rem;
-
-    font-weight:500;
-
-    transition:.25s;
-
-}
-
-
-
-.nav a:hover {
-
-    color:#2563eb;
+margin:auto;
 
 }
 
@@ -197,15 +70,36 @@ p {
 
 
 
-.menu-toggle {
+/* ================================
+ HEADER
+================================ */
 
-    display:none;
 
-    background:none;
+.luxury-header {
 
-    border:none;
+position:absolute;
 
-    font-size:30px;
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:10;
+
+padding:40px 0;
+
+}
+
+
+
+.luxury-header .container {
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
 
 }
 
@@ -213,70 +107,35 @@ p {
 
 
 
-/* =========================
-   BUTTONS
-========================= */
+.luxury-logo {
 
+font-family:var(--serif);
 
-.btn {
+font-size:2.2rem;
 
-    display:inline-flex;
+text-decoration:none;
 
-    align-items:center;
+color:white;
 
-    justify-content:center;
-
-    padding:15px 32px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
+letter-spacing:5px;
 
 }
 
 
 
-.primary-btn {
+.luxury-logo span {
 
-    background:#2563eb;
+display:block;
 
-    color:white;
+font-family:var(--sans);
 
-}
+font-size:.55rem;
 
+letter-spacing:8px;
 
+color:var(--gold);
 
-.primary-btn:hover {
-
-    transform:translateY(-2px);
-
-    background:#1d4ed8;
-
-    box-shadow:0 15px 30px rgba(37,99,235,.25);
-
-}
-
-
-
-.secondary-btn {
-
-    border:1px solid #e2e8f0;
-
-    color:#0f172a;
-
-    background:white;
-
-}
-
-
-
-.secondary-btn:hover {
-
-    border-color:#2563eb;
+margin-top:-8px;
 
 }
 
@@ -284,83 +143,37 @@ p {
 
 
 
-/* =========================
-   HERO
-========================= */
+nav {
 
+display:flex;
 
-.hero {
-
-    padding:120px 0 100px;
+gap:45px;
 
 }
 
 
 
-.hero-content {
+nav a {
 
-    display:grid;
+text-decoration:none;
 
-    grid-template-columns:1.1fr .9fr;
+color:#ddd;
 
-    align-items:center;
+font-size:.85rem;
 
-    gap:80px;
+letter-spacing:2px;
 
-}
+text-transform:uppercase;
 
-
-
-.hero p {
-
-    margin:30px 0;
-
-    max-width:560px;
-
-    font-size:1.2rem;
+transition:var(--transition);
 
 }
 
 
 
-.hero-buttons {
+nav a:hover {
 
-    display:flex;
-
-    gap:18px;
-
-}
-
-
-
-.hero-card {
-
-    position:relative;
-
-}
-
-
-
-.glass-card {
-
-    background:white;
-
-    border:1px solid #e2e8f0;
-
-    padding:45px;
-
-    border-radius:28px;
-
-    box-shadow:
-    0 30px 80px rgba(15,23,42,.08);
-
-}
-
-
-
-.glass-card h3 {
-
-    font-size:2rem;
+color:var(--gold);
 
 }
 
@@ -368,54 +181,36 @@ p {
 
 
 
-.stats {
-
-    display:flex;
-
-    justify-content:space-between;
-
-    margin-top:35px;
-
-}
+/* ================================
+ HERO
+================================ */
 
 
 
-.stats strong {
+.luxury-hero {
 
-    display:block;
+height:100vh;
 
-    color:#2563eb;
+min-height:750px;
 
-    font-size:1.4rem;
+display:flex;
 
-}
+align-items:center;
 
+position:relative;
 
+background:
 
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.85)
+),
 
+url("../images/hero.jpg");
 
-/* =========================
-   SECTIONS
-========================= */
+background-size:cover;
 
-
-.services-preview,
-.why,
-.process {
-
-    padding:110px 0;
-
-}
-
-
-
-.section-description {
-
-    text-align:center;
-
-    max-width:600px;
-
-    margin:20px auto 60px;
+background-position:center;
 
 }
 
@@ -423,60 +218,11 @@ p {
 
 
 
-/* =========================
-   CARDS
-========================= */
+.hero-overlay {
 
+position:absolute;
 
-.cards,
-.features,
-.steps {
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.card,
-.feature,
-.steps div {
-
-    background:#ffffff;
-
-    border:1px solid #e2e8f0;
-
-    border-radius:24px;
-
-    padding:38px;
-
-    transition:.35s;
-
-}
-
-
-
-.card:hover,
-.feature:hover,
-.steps div:hover {
-
-    transform:translateY(-6px);
-
-    box-shadow:
-    0 25px 60px rgba(15,23,42,.08);
-
-}
-
-
-
-.card p,
-.feature p {
-
-    margin-top:15px;
+inset:0;
 
 }
 
@@ -484,18 +230,63 @@ p {
 
 
 
-/* =========================
- PROCESS
-========================= */
+.luxury-content {
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+}
 
 
-.steps span {
 
-    color:#2563eb;
+.eyebrow {
 
-    font-size:2rem;
+font-size:.75rem;
 
-    font-weight:800;
+letter-spacing:6px;
+
+color:var(--gold);
+
+margin-bottom:35px;
+
+}
+
+
+
+.luxury-content h1 {
+
+font-size:clamp(4rem,8vw,7rem);
+
+line-height:.95;
+
+color:white;
+
+}
+
+
+
+.luxury-content h1 span {
+
+color:var(--gold);
+
+font-style:italic;
+
+}
+
+
+
+.luxury-description {
+
+margin:40px 0;
+
+max-width:550px;
+
+font-size:1.2rem;
+
+color:#ddd;
 
 }
 
@@ -503,55 +294,35 @@ p {
 
 
 
-/* =========================
- CTA
-========================= */
+.luxury-button {
 
+display:inline-block;
 
-.cta {
+padding:18px 45px;
 
-    background:#0f172a;
+border:1px solid var(--gold);
 
-    padding:110px 0;
+color:var(--gold);
 
-    text-align:center;
+text-decoration:none;
 
-}
+letter-spacing:3px;
 
+text-transform:uppercase;
 
+font-size:.75rem;
 
-.cta h2 {
-
-    color:white;
-
-}
-
-
-
-.cta p {
-
-    margin:25px auto;
-
-    color:#cbd5e1;
+transition:var(--transition);
 
 }
 
 
 
+.luxury-button:hover {
 
+background:var(--gold);
 
-/* =========================
- FOOTER
-========================= */
-
-
-.footer {
-
-    padding:35px 0;
-
-    border-top:1px solid #e2e8f0;
-
-    text-align:center;
+color:black;
 
 }
 
@@ -559,47 +330,169 @@ p {
 
 
 
-/* =========================
+/* ================================
+ PHILOSOPHY
+================================ */
+
+
+
+.philosophy {
+
+padding:160px 0;
+
+text-align:center;
+
+}
+
+
+
+.philosophy h2 {
+
+font-size:clamp(2.5rem,5vw,4.5rem);
+
+max-width:1000px;
+
+margin:auto;
+
+color:white;
+
+}
+
+
+
+.philosophy p:last-child {
+
+max-width:700px;
+
+margin:40px auto 0;
+
+color:#aaa;
+
+}
+
+
+
+
+
+/* ================================
+ SERVICES
+================================ */
+
+
+
+.luxury-services {
+
+padding:120px 0;
+
+border-top:1px solid #222;
+
+}
+
+
+
+.luxury-grid {
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:60px;
+
+}
+
+
+
+.luxury-grid h3 {
+
+color:var(--gold);
+
+font-family:var(--sans);
+
+font-size:1rem;
+
+letter-spacing:4px;
+
+}
+
+
+
+.luxury-grid h2 {
+
+font-size:2.3rem;
+
+margin:20px 0;
+
+color:white;
+
+}
+
+
+
+.luxury-grid p {
+
+color:#999;
+
+}
+
+
+
+
+
+/* ================================
+ STATEMENT
+================================ */
+
+
+
+.statement {
+
+padding:180px 0;
+
+text-align:center;
+
+background:var(--ivory);
+
+color:black;
+
+}
+
+
+
+.statement h2 {
+
+font-size:clamp(3rem,6vw,6rem);
+
+max-width:900px;
+
+margin:0 auto 60px;
+
+}
+
+
+
+
+
+/* ================================
  CONTACT
-========================= */
-
-
-.contact-form {
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:16px;
-
-}
+================================ */
 
 
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+.contact-banner {
 
-    padding:16px;
+padding:160px 0;
 
-    border-radius:14px;
-
-    border:1px solid #e2e8f0;
-
-    font-family:inherit;
-
-    font-size:1rem;
+text-align:center;
 
 }
 
 
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-banner h2 {
 
-    outline:none;
+font-size:4rem;
 
-    border-color:#2563eb;
+color:white;
 
 }
 
@@ -607,74 +500,59 @@ p {
 
 
 
-/* =========================
- MOBILE
-========================= */
+/* ================================
+ FOOTER
+================================ */
 
 
-@media(max-width:950px){
 
+.luxury-footer {
 
-.hero-content {
+padding:50px 0;
 
-    grid-template-columns:1fr;
+border-top:1px solid #222;
 
-}
+text-align:center;
 
+color:#777;
 
-.cards,
-.features,
-.steps {
+font-size:.8rem;
 
-    grid-template-columns:1fr;
-
-}
-
-
-.nav {
-
-    display:none;
-
-}
-
-
-.menu-toggle {
-
-    display:block;
-
-}
-
-
-.nav.active {
-
-    display:flex;
-
-    position:absolute;
-
-    top:88px;
-
-    left:0;
-
-    right:0;
-
-    background:white;
-
-    padding:30px;
-
-    flex-direction:column;
-
-    text-align:center;
+letter-spacing:2px;
 
 }
 
 
 
-.hero-buttons {
 
-    flex-direction:column;
+
+/* ================================
+ RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+nav {
+
+display:none;
 
 }
 
+
+.luxury-grid {
+
+grid-template-columns:1fr;
+
+}
+
+
+.luxury-content h1 {
+
+font-size:3.5rem;
+
+}
 
 
 }
