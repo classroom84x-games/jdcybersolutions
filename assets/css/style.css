@@ -604,3 +604,61 @@ h2 {
 
 
 }
+
+/* SCROLL ANIMATIONS */
+
+
+.hidden {
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:
+    opacity .6s ease,
+    transform .6s ease;
+
+}
+
+
+.show {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* MOBILE NAVIGATION */
+
+
+@media(max-width:900px){
+
+.nav.active {
+
+    display:flex;
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    right:0;
+
+    background:white;
+
+    padding:30px;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+}
